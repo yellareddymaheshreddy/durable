@@ -116,7 +116,7 @@ function App() {
   ]
   
   return (
-    <body className='bg-[#dbdad2] p-10'>
+    <body className='bg-[#dbdad2] px-10 py-6'>
 
       <div>
         <div >
@@ -216,7 +216,7 @@ function App() {
               {
                 imgs.map(img => (
                   <div key={img}>
-                    <div className='flex justify-center'><img src={`./${img}.png`} alt="" width='100%' className=' hover:scale-125 duration-300'/></div>
+                    <div className='flex justify-center h-[29vh]'><img src={`./${img}.png`} alt="" width='100%' height='70px' className=' hover:scale-125 duration-300'/></div>
 
                     <div className='flex justify-between mt-6'>
                       <span><img src="./love.svg" alt="love" width={25} /></span>
