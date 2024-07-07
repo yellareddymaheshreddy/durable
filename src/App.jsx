@@ -199,7 +199,7 @@ function App() {
                 setcatog(pre => !pre)
               }}><span>Categories</span> <img src="./downblack.svg" alt="" width={20} /> </div>
             {catog && (<div className='px-2'>
-              <ul className='h-[30vh] overflow-y-scroll flex flex-col gap-1'>
+              <ul className='h-[15vh] overflow-y-scroll flex flex-col gap-1'>
                 {Categories.map(item => (
                   <li className='flex gap-2 items-center font-500'><input type="checkbox" id={`${item}`} className='w-4 h-4 border
                            appearance-none
@@ -213,20 +213,20 @@ function App() {
           </div>
           {/* grid starts here */}
           <div className='ml-8'>
-            <div className='flex justify-between w-[74vw]'>
+            <div className='flex justify-between w-[76vw]'>
               <div className='flex justify-between' >
                 <span className='text-skin-base font-700 font-Quicksand'>Active Filters :&nbsp;</span>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X SIZE 40</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X COLOUR BROWN</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X SIZE 10</button>
-                <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X Premiums 10</button>
+                <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X Premiums pro 10</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X PRIZE RS. 4999</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X CLEAR ALL</button>
               </div>
               <div className='text-skin-base font-700 font-Quicksand flex jus gap-1'>Sort by <img src="./downarrow.svg" alt="" width={15} />
               </div>
             </div>
-            <div className='grid grid-cols-3 gap-20 mt-6'>
+            <div className='grid grid-cols-3 gap-x-20 gap-y-10 mt-6'>
 
               {
                 imgs.map(img => (
@@ -241,7 +241,7 @@ function App() {
                       </div>
                       <span><img src="./cards.svg" alt="cards" width={25} /></span>
                     </div>
-                    <div className='flex justify-between  font-700 font-Quicksand  my-2'><span>Durable Hand Executive</span> <span className='flex gap-2'>
+                    <div className='flex justify-between  font-700 font-Quicksand  my-1'><span>Durable Hand Executive</span> <span className='flex gap-2'>
                       <span>4.8</span>
                       <span><img src="./star.svg" alt="star" width={25} /></span>
                     </span>
