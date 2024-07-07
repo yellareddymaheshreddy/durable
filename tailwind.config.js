@@ -5,7 +5,31 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily:{
+      'Quicksand':['Quicksand','sans-serif']
+    },
+    fontWeight:{
+      '700':'900',
+      '300':'300',
+      '600':'600',
+      '400':'400',
+      '500':'500'
+
+    },
+    extend: {
+      textColor:{
+        skin:{
+          base:'var(--color-red-base)'
+        }
+      }
+      
+    },
+    backgroundColor:{
+      skin:{
+        fill:'var(--color-red-base)',
+        black:'var(--color-black-base)'
+      }
+    }
   },
   plugins: [],
 }
