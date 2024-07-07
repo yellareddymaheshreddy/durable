@@ -165,7 +165,7 @@ function App() {
                 setprice(pre => !pre)
               }}><span>Price</span> <img src="./downblack.svg" alt="" width={20} /> </div>
             {pric && (<div>
-              <ul className='h-[15vh] overflow-y-scroll font-500 flex flex-col gap-1 px-2'>
+              <ul className='h-[11vh] overflow-y-scroll font-500 flex flex-col gap-1 px-2'>
                 {prices.map(price => (
                   <li className='flex gap-2 items-center'><input type="checkbox" id={`${price}`} className='w-4 h-4 border
                            appearance-none
@@ -215,22 +215,23 @@ function App() {
           <div className='ml-8'>
             <div className='flex justify-between w-[74vw]'>
               <div className='flex justify-between' >
-                <span className='text-skin-base font-700 font-Quicksand'>Active Filters :</span>
+                <span className='text-skin-base font-700 font-Quicksand'>Active Filters :&nbsp;</span>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X SIZE 40</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X COLOUR BROWN</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X SIZE 10</button>
+                <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X Premiums 10</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X PRIZE RS. 4999</button>
                 <button className='font-600 bg-[#c1c1c1] mx-2 px-2'>X CLEAR ALL</button>
               </div>
               <div className='text-skin-base font-700 font-Quicksand flex jus gap-1'>Sort by <img src="./downarrow.svg" alt="" width={15} />
               </div>
             </div>
-            <div className='grid grid-cols-3 gap-8 mt-6'>
+            <div className='grid grid-cols-3 gap-20 mt-6'>
 
               {
                 imgs.map(img => (
                   <div key={img}>
-                    <div className='flex justify-center h-[29vh]'><img src={`./${img}`} alt="" width='100%' height='70px' className=' hover:scale-125 duration-300' /></div>
+                    <div className='flex justify-center h-[29vh]'><img src={`./${img}`} alt="" width='100%' height='70px' className=' hover:scale-150 duration-300' /></div>
 
                     <div className='flex justify-between mt-6 px-4'>
                       <span><img src="./love.svg" alt="love" width={25} /></span>
