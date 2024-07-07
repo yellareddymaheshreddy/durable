@@ -142,12 +142,12 @@ function App() {
           <div className='border-black w-[26vw]'>
             <div className='text-skin-base font-700 font-Quicksand flex gap-2'><img src="./filter.svg" alt="no" width={25} />Hide Filters</div>
 
-            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-500 text-xl my-2 flex justify-between cursor-pointer'
+            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-500 text-xl my-4 flex justify-between cursor-pointer'
               onClick={() => {
                 setcolors(pre => !pre)
               }}><span>Colours</span> <img src="./downblack.svg" alt="" width={20} /> </div>
-            {color && (<div className='px-2'>
-              <ul className='h-[30vh] overflow-y-scroll flex flex-col gap-1'>
+            {color && (<div className='px-2 '>
+              <ul className='h-[25vh] overflow-y-scroll flex flex-col gap-1'>
                 {colors.map(color => (
                   <li className='flex gap-2 items-center font-500'><input type="checkbox" id={`${color.name}`} className='        
                           w-4 h-4 border
@@ -160,7 +160,7 @@ function App() {
                 ))}
               </ul>
             </div>)}
-            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-700 font-Quicksand text-xl my-2 flex justify-between cursor-pointer'
+            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-700 font-Quicksand text-xl my-4 flex justify-between cursor-pointer'
               onClick={() => {
                 setprice(pre => !pre)
               }}><span>Price</span> <img src="./downblack.svg" alt="" width={20} /> </div>
@@ -172,11 +172,11 @@ function App() {
                           border-gray-500 
                           cursor-pointer 
                            checked:appearance-auto ' /><label for={`${price}`} className='flex gap-2 items-center'
-                  >{`${price}`}</label></li>
+                    >{`${price}`}</label></li>
                 ))}
               </ul>
             </div>)}
-            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-700 font-Quicksand text-xl my-2 flex justify-between cursor-pointer'
+            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-700 font-Quicksand text-xl my-4 flex justify-between cursor-pointer'
               onClick={() => {
                 setsiz(pre => !pre)
               }}><span>Size</span> <img src="./downblack.svg" alt="" width={20} /> </div>
@@ -194,7 +194,7 @@ function App() {
                 <span className='border-2 border-black text-center py-1 min-w-12'>11</span>
               </div>
             </div>)}
-            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-700 font-Quicksand text-xl my-2 flex justify-between cursor-pointer'
+            <div className='bg[#d4d4cc] border-2 border-white px-2 py-1 font-700 font-Quicksand text-xl my-4 flex justify-between cursor-pointer'
               onClick={() => {
                 setcatog(pre => !pre)
               }}><span>Categories</span> <img src="./downblack.svg" alt="" width={20} /> </div>
@@ -206,12 +206,12 @@ function App() {
                           border-gray-500 
                           cursor-pointer 
                            checked:appearance-auto ' /><label for={`${item}`} className='flex gap-2 items-center'
-                  >{`${item}`}</label></li>
+                    >{`${item}`}</label></li>
                 ))}
               </ul>
             </div>)}
           </div>
-
+          {/* grid starts here */}
           <div className='ml-8'>
             <div className='flex justify-between w-[74vw]'>
               <div className='flex justify-between' >
